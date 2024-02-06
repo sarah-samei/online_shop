@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('jewellery_name');
-            $table->string('brand_name')->unique();
-            $table->string('gold-type');
+            $table->string('brand_name');
+            $table->string('gold_type');
             $table->string('jewellery_type');
             $table->string('price');
             $table->timestamps();
